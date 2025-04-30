@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Profile Form</title>
+</head>
+<body>
+  <!-- Form -->
+ <form action="" id="profileForm" class="form">
+   <h1 class="profile-header">Profile Form</h1>
+   <div class="name-container">
+   <input type="text" placeholder="First name" id="firstnameInput" class="input" spellcheck="false">
+   <input type="text" placeholder="Last name" id="lastnameInput" class="input" spellcheck="false">
+   </div>
+   <input type="number" placeholder="Age" id="ageInput" class="input" spellcheck="false">
+   <div id="ageMsg" class="error-msg"></div>
+   <input type="text" placeholder="Job title" id="jobInput" class="input" spellcheck="false">
+   <input type="email" placeholder="Email" id="emailInput" class="input" spellcheck="false">
+   <input type="file" accept="image/*" id="imgInput" class="image-input" spellcheck="false">
+   <button class="save-btn">Save profile</button>
+   <div id="errorMsg" class="error-msg"></div>
+ </form>
+ 
+ <!--Profile Card-->
+ <div id="profileCard" class="profile-card-container" style="display:none">
+  <h1 class="profile-header">Profile Card</h1>
+  <div class="img-container">
+  <img src="" alt="" id="displayImg" class="display-img">
+  </div>
+  <p><b>Name:</b> <span id="displayName"></span></p>
+  <p><b>Age:</b> <span id="displayAge"></span></p>
+  <p><b>Job title:</b> <span id="displayJob"></span></p>
+  <p><b>Email:</b> <span id="displayEmail"></span></p>
+ </div>
+  <button style="display:none" id="downloadBtn" class="download-btn">Download</button>
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script defer="" src="script.js"></script>
+</body>
+</html>
